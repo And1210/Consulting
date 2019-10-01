@@ -26,7 +26,7 @@ var config = {
 			},
 			{
 				test: /\.(woff2?|jpe?g|png|gif|ico)$/,
-		    use: 'file-loader?name=./assets/images/[name].[ext]'
+		    use: 'file-loader'
 			}
 		]
 	},

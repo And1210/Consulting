@@ -19,6 +19,7 @@
 	min-width: 100vh;
 	min-height: 100vh;
 
-	/* background-image: url("../imgs/home-backsplash.jpg"); */
-	/* background-image: linear-gradient(to bottom right, blue, cyan); */
+	background-image: url("../imgs/home-backsplash.jpg");
+	opacity: 0.5;
+	background-size: cover;
 }
