@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/header.jsx';
 import Body from './pages/home.jsx';
 
-
 class Page extends React.Component {
 
 	render() {
