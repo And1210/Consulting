@@ -1,0 +1,24 @@
+.header {
+	background-color: #659DBD;
+
+	height: 5%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto auto auto;
+}
+
+.panel {
+  border-radius: 0.3rem;
+  padding: 1rem;
+}
+
+.bg {
+	min-width: 100vh;
+	min-height: 100vh;
+
+	/* background-image: url("../imgs/home-backsplash.jpg"); */
+	/* background-image: linear-gradient(to bottom right, blue, cyan); */
+}
