@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './public/css/index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/header.jsx';
-import Body from './pages/main.jsx';
+import Body from './pages/home.jsx';
 
 
 class Page extends React.Component {

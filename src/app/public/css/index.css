@@ -18,8 +18,34 @@
 .bg {
 	min-width: 100vh;
 	min-height: 100vh;
+	padding-left: 10vh;
+	padding-right: 10vh;
+	padding-top: 5vh;
 
 	background-image: url("../imgs/home-backsplash.jpg");
 	opacity: 0.5;
 	background-size: cover;
+}
+
+.block-text {
+	padding: 5px;
+	max-width: 100vh;
+}
+
+.block-image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.block {
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	display: flex;
+	justify-content: space-around;
+
+
+	background-color: white;
+	color: black;
 }
