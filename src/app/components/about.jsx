@@ -4,28 +4,64 @@ import '../public/css/index.css';
 
 import Headshot from '../public/imgs/Andrew_Farley.jpeg';
 
+class Panel extends React.Component {
+	render() {
+		return (
+			<div className="resume-panel">
+				<h4>{this.props.title}</h4>
+				{this.props.children}
+			</div>
+		);
+	}
+}
+
 class About extends React.Component {
 	render() {
 		return (
 			<div id='body'>
-				<ul className="slides">
-					<li >
-            <div className="overlay" />
+				<ol className="resume">
+					<li style={{paddingBottom: '30px'}}>
             <div className="container-fluid">
-            <div className="row">
-                <div className="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-                <div className="slider-text-inner js-fullheight">
-                    <div className="desc">
-                    <h1>Hi! <br />I'm Jackson</h1>
-                    <h2>100% html5 bootstrap templates Made by <a href="https://colorlib.com/" target="_blank">colorlib.com</a></h2>
-                    <p><a className="btn btn-primary btn-learn">Download CV <em className="icon-download4" /></a></p>
-                    </div>
-                </div>
-                </div>
-            </div>
+	            <div className="row">
+								<div className="col-md-2">
+									<img src={Headshot} className="resume-image" />
+								</div>
+	              <div className="col-md-4">
+                  <h1>Andrew Farley</h1>
+									<h2>About Me</h2>
+								</div>
+								<div className="col-md-6">
+									<Panel title="Education">
+										<ul>
+											<li>
+												Computer Engineering - Class of 2021 - Queen's University
+											</li>
+											<li>
+												Class of 2017 - North Toronto Collegiate Institute
+											</li>
+										</ul>
+									</Panel>
+								</div>
+	            </div>
             </div>
           </li>
-				</ul>
+					<li>
+            <div className="container-fluid">
+	            <div className="row">
+								<div className="col-md-6">
+									<Panel title="Project Experience">
+
+									</Panel>
+								</div>
+								<div className="col-md-6">
+									<Panel title="Extracurriculars">
+
+									</Panel>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ol>
 			</div>
 		);
 	}

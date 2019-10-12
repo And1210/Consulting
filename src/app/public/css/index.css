@@ -48,3 +48,21 @@
 	background-color: #FFFFFFDD;
 	color: #001488;
 }
+
+.resume {
+	padding: 10vh;
+
+	list-style: none;
+}
+
+.resume-image {
+	max-width: 150px;
+	max-height: 150px;
+
+	border-radius: 50%;
+}
+
+.resume-panel {
+	padding: 20px;
+	background-color: #EFEFEFDD;
+}
