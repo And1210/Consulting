@@ -1,18 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './public/css/index.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './components/header.jsx';
-import Body from './pages/home.jsx';
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 
+import Root from './components/root.jsx';
+import Home from './components/home.jsx';
+
+//Content of the index route
+const IndexRoute = () => (
+	<Root>
+		<Home />
+	</Root>
+);
+
+//Final page to render, has routes inside
 class Page extends React.Component {
-
 	render() {
 		return (
-			<div id="page">
-				<Header />
-				<Body />
-			</div>
+			<Router>
+				<div>
+					<Route path='/' component={IndexRoute} />
+				</div>
+			</Router>
 		);
 	}
 }

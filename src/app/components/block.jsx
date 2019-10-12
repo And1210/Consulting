@@ -34,7 +34,7 @@ class Block extends React.Component {
 					<div className="block-image">
 						<img src={this.props.img} style={{'maxWidth': '100px', 'maxHeight': '100px'}} />
 					</div>
-					<div className="block-text">
+					<div className="block-text" align="right">
 						<h1>{this.props.title}</h1>
 						<p>
 							{this.props.children}

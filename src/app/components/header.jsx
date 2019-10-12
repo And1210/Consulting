@@ -5,6 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
+import '../public/css/index.css';
 
 // <Form inline>
 //   <FormControl type="text" placeholder="Search" className="mr-sm-2" />
@@ -14,7 +15,7 @@ import FormControl from 'react-bootstrap/FormControl';
 class Header extends React.Component {
 	render() {
 		return (
-			<Navbar bg="light" expand="lg">
+			<Navbar bg="light" expand="lg" className="navbar">
 				<Navbar.Brand href="/">Consulting</Navbar.Brand>
 			  <Navbar.Toggle aria-controls="basic-navbar-nav" />
 			  <Navbar.Collapse id="basic-navbar-nav">
