@@ -28,7 +28,7 @@ class Home extends React.Component {
 						- App Development<br />
 				</Block>
 			</div>
-		)
+		);
 	}
 }
 
